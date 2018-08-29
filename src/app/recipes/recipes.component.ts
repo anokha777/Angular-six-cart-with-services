@@ -18,6 +18,7 @@ export class RecipesComponent implements OnInit {
     .subscribe(
       (recipe: any) =>{
         this.recipeDatails = recipe;
+        console.log('rrrrrrrrrrr', recipe);
       }
     );
   }

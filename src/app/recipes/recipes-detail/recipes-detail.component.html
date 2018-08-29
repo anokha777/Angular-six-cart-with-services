@@ -19,7 +19,7 @@
       </button>
 
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-        <a class="dropdown-item" href="#">Add Ingredient to shopping list</a>
+        <a class="dropdown-item" (click)="onAddToShoppinglist()" style="cursor: pointer;">Add Ingredient to shopping list</a>
         <a class="dropdown-item" href="#">Edit Recipe</a>
         <a class="dropdown-item" href="#">Delete Recipe</a>
       </div>
@@ -41,7 +41,6 @@
 <div class="row">
   <div class="col-xs-12">
     Description: {{ recipeDeatilsForRecipeDetailComponent.description }}
-    length: {{ recipeDeatilsForRecipeDetailComponent.ingredient }}
   </div>
 </div>
 <div class="row">

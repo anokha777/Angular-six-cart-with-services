@@ -24,5 +24,15 @@ export class ShoppingListService {
     // emmiting event for ingredient changed
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+
+    // for(let ingredient of ingredients){
+    //   this.addNewnewIngredient(ingredient);
+    // } -----------------------------------------or below code better
+
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
   
 }

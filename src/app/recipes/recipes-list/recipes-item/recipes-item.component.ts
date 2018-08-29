@@ -19,7 +19,8 @@ export class RecipesItemComponent implements OnInit {
     this.recipeService.showRecipeEventForRecipeListComponent.emit({
       name : recipe.name,
       description : recipe.description,
-      imagePath : recipe.imagePath
+      imagePath : recipe.imagePath,
+      ingredients : recipe.ingredients
     });
    }
 
